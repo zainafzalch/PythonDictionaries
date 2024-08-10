@@ -55,6 +55,10 @@ def display_all(service_tickets):
                 if ticket_details["Status"] == "open":
                     print(f"{tickets} : {ticket_details}")
 
+    elif filter_or_not not in ["y","n"]:
+        print("Invalid Filer option. Please try again.")
+        display_all(service_tickets)
+
     else:
         for key in service_tickets.keys():
             print(key,":",service_tickets[key])
