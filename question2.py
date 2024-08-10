@@ -99,6 +99,7 @@ def main():
                     update_ticket(service_tickets)
                     main()
                 case 4:
-                    print("Thank You. Have a nice day.")
+                    print("Thank You. Good bye!")
+                    service_tickets.clear()
                     exit()
 main()
